@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  sentinel-dashbard:
+    hostname: sentinel-board
+    container_name: sentinel-board
+    build: build/
+    image: huangqiqun/sentinel-dashboard:latest
+    ports:
+      - 38080:8080
